@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-barbas/static/css/main.b100e6da.chunk.css",
+    "main.js": "/portfolio-barbas/static/js/main.c419e33b.chunk.js",
+    "main.js.map": "/portfolio-barbas/static/js/main.c419e33b.chunk.js.map",
+    "runtime-main.js": "/portfolio-barbas/static/js/runtime-main.905a8799.js",
+    "runtime-main.js.map": "/portfolio-barbas/static/js/runtime-main.905a8799.js.map",
+    "static/js/2.57f6af57.chunk.js": "/portfolio-barbas/static/js/2.57f6af57.chunk.js",
+    "static/js/2.57f6af57.chunk.js.map": "/portfolio-barbas/static/js/2.57f6af57.chunk.js.map",
+    "index.html": "/portfolio-barbas/index.html",
+    "precache-manifest.be7f21f1a845d4c8c305e182e1f95f1f.js": "/portfolio-barbas/precache-manifest.be7f21f1a845d4c8c305e182e1f95f1f.js",
+    "service-worker.js": "/portfolio-barbas/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/portfolio-barbas/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/portfolio-barbas/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.905a8799.js",
+    "static/js/2.57f6af57.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.c419e33b.chunk.js"
+  ]
+}
