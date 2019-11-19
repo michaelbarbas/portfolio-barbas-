@@ -10,15 +10,20 @@
   height: 40vmin;
 }
 
+.img {
+  height:5px;
+  width:100%;
+}
+
 .Name {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  color: white;
+  color: #032b36;
 }
 
 .App-link {
