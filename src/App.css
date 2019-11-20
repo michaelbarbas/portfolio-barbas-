@@ -1,29 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: inherit;
+  background-color: #2f384a;
 }
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.img {
-  height:5px;
-  width:100%;
+.Roles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 0;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 .Name {
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: #032b36;
+  margin:0;
+  font-size:3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
 }
 
 .App-link {

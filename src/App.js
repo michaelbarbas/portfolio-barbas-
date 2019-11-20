@@ -1,22 +1,18 @@
 import React from "react";
 import "./App.css";
-import GitHub from "./image/GitHub-Mark-32px.png";
-import LinkedIn from "./image/LinkedIn.png";
+import GitHub from "./image/github.png";
+import LinkedIn from "./image/linkedin.png";
 
 function App() {
   return (
     <div className="App">
       <header className="Description">
-        <h1 className="Name">
-          Michael Barbas
-
-    
-          <div class="img">
-            
-            <img src={GitHub} alt="GitHub"></img>
-            <img src={LinkedIn} alt="LinkedIn"></img>
+        <h1 className="Name">Michael Barbas</h1>
+        <div class="Roles">
+          <div class="Role">
+            <pre class="mod_1">Backend Engineer | Student</pre>
           </div>
-        </h1>
+        </div>
       </header>
     </div>
   );
