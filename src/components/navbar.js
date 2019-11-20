@@ -2,14 +2,13 @@ import React from 'react'
 import {Link, NavLink, withRouter} from 'react-router-dom'
 
 const Navbar = (props) => {
-    console.log(props)
 
     return(
-        <nav className = "navigation-wrapper">
+        <nav className = "nav-wrapper blue darken-2">
             <div className = "container">
-                
+                <a className = "logo">Michael Barbas</a>
                 <ul className = "right">
-                    <li><Link to = "/">Home</Link></li>
+                    <li><NavLink exact to = "/">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to= "/contact">Contact</NavLink></li>
                 </ul>
