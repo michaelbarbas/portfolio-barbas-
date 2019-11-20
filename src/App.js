@@ -10,7 +10,7 @@ function App() {
         <h1 className="Name">Michael Barbas</h1>
         <div class="Roles">
           <div class="Role">
-            <pre class="mod_1">Backend Engineer | Student</pre>
+            <pre class="mod_1">Engineer | Student</pre>
           </div>
         </div>
       </header>
