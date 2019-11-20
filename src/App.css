@@ -4,13 +4,33 @@
 }
 .App {
   text-align: center;
+  padding:100px
+}
+
+.SocialMedia{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.SocialMedia.Github{
+  margin: 5px;
+}
+
+.SocialMedia.Mail{
+  margin: 5px;
+}
+
+.SocialMedia.Linkedin{
+  margin: 5px;
 }
 
 .Roles {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .5rem 0;
+  
   font-size: 1rem;
   color: #ffffff;
 }
