@@ -1,10 +1,20 @@
 * {
   box-sizing: inherit;
   background-color: #2f384a;
+  color: #ffffff
 }
 .App {
   text-align: center;
-  padding:100px
+  padding:70px
+}
+
+.right{
+  font-weight: 500;
+}
+
+.left{
+  font-weight: 700;
+  color: #2f384a
 }
 
 .SocialMedia{
@@ -16,14 +26,17 @@
 
 .SocialMedia.Github{
   margin: 5px;
+  padding: 5px;
 }
 
 .SocialMedia.Mail{
   margin: 5px;
+  padding: 5px;
 }
 
 .SocialMedia.Linkedin{
   margin: 5px;
+  padding: 5px;
 }
 
 .Roles {

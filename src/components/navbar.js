@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css'
 import {Link, NavLink, withRouter} from 'react-router-dom'
 
 const Navbar = (props) => {
@@ -6,7 +7,7 @@ const Navbar = (props) => {
     return(
         <nav className = "nav-wrapper blue darken-2">
             <div className = "container">
-                <a className = "logo">Michael Barbas</a>
+                <a className = "left">Michael Barbas</a>
                 <ul className = "right">
                     <li><NavLink exact to = "/">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
