@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css'
 import GitHub from "../image/github.png";     //
-import LinkedIn from "../image/linkedin.png"; //img
+import LinkedIn from "../image/LinkedIn.png"; //img
 
 
 const Home = () => {
