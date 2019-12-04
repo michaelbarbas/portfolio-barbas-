@@ -16,25 +16,11 @@ class App extends React.Component {
           <NavBar />
           <Route exact path='/' component={Home}/>
           <Route path='/about' component = {About}/>
-          <Route path='/contact' component = {Contact}/>
-
-              
-          
-          
+          <Route path='/contact' component = {Contact}/>          
         </div>
       </BrowserRouter>
     );
   }
 }
-
-/* <div class="Mail">
-                <a
-                  href="mailto:michaelbarbas@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={Mail} alt="mail"></img>
-                </a>
-              </div> */
 
 export default App;
