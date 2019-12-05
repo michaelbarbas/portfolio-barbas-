@@ -19,10 +19,18 @@ const About = () => {
           <h3 className = "prog_lang">Programming Languages: </h3>
           <ul className = "languages">
             <li>Python</li>
+            <li>Java</li>
             <li>JavaScript</li>
             <li>HTML/CSS</li>
           </ul>
           <h4 className = "other">Other skills: </h4>
+          <ul className= "other_skills">
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>Unix</li>
+            <li>Git</li>
+            <li>Firebase</li>
+          </ul>
       </div>
 
     </div>
