@@ -6,7 +6,7 @@
 
 .description{
   text-align: left;
-  padding: 30px;
+  padding: 20px;
 }
 
 .App {
@@ -55,11 +55,33 @@
 }
 
 .about{
+  font-size: xx-large;
   text-align: center;
 }
 
+.prog_lang{
+  font-size: larger;
+  text-align: left;
+  padding: 20px;
+}
+
+.languages{
+  font-size : small;
+}
+
+.other{
+  font-size: larger;
+}
+
 .skills{
+  font-size: xx-large;
   text-align: center;
+}
+
+ul li::before{
+  content: "\2022";
+  color:#ffffff;
+  width: 1em;
 }
 
 .Name {

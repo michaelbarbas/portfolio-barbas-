@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css'
 import GitHub from "../image/github.png";     //
-import LinkedIn from "../image/LinkedIn.png"; //img
+import LinkedIn from "../image/linkedin.png"; //img
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <h4 className="center">Michael Barbas</h4>
       <div class="Roles">
         <div class="Role">
-          <pre class="mod_1">Engineer | Student</pre>
+          <pre class="mod_1">Software Engineer | Student</pre>
         </div>
       </div>
       <div class="SocialMedia">

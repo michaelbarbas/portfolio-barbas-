@@ -16,11 +16,13 @@ const About = () => {
 
       <div className = "skills_section">
         <h2 className = "skills">Skills</h2>
-          <div className = "prog_lang">Programming Languages:
-          <p></p>
-          </div>
-          <div className = "other">Other skills:
-          </div>
+          <h3 className = "prog_lang">Programming Languages: </h3>
+          <ul className = "languages">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <h4 className = "other">Other skills: </h4>
       </div>
 
     </div>
