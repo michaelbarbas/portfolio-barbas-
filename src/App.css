@@ -6,7 +6,6 @@
 
 .description{
   text-align: left;
-  padding: 20px;
 }
 
 .App {
@@ -19,8 +18,8 @@
 }
 
 .left{
-  font-weight: 700;
-  color: #2f384a
+  font-weight: 300;
+  color: #ffffff
 }
 
 .SocialMedia{
@@ -61,8 +60,7 @@
 
 .prog_lang{
   font-size: larger;
-  text-align: left;
-  padding: 20px;
+  /* text-align: left; */
 }
 
 .languages{
@@ -78,7 +76,8 @@
   text-align: center;
 }
 
-ul li::before{
+.languages li::before{
+  display : inline-block;
   content: "\2022";
   color:#ffffff;
   width: 1em;
