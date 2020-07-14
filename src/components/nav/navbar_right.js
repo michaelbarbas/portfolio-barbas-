@@ -13,7 +13,7 @@ li {
   text-decoration: none;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   flex-flow: column nowrap;
   background-color: #0D2538;
   position: fixed;
@@ -35,12 +35,12 @@ const NavBarRight = ({ open }) => {
   return (
     <Ul open={open} >
       <li>
-        <NavLink exact to="/" activeStyle={{ textDecoration: 'none'}, {color: '#fff'}} style={{ textDecoration: 'none', color: '#fff'}}>Home&emsp;|
+        <NavLink exact to="/" activeStyle={{ textDecoration: 'none'}, {color: '#fff'}} style={{ textDecoration: 'none', color: '#fff'}}>Home
         </NavLink>
       </li>
       
       <li>
-        <NavLink to="/about" activeStyle={{ textDecoration: 'none'}, {color: '#fff'}} style={{ textDecoration: 'none', color: '#fff'}}>About&emsp;|</NavLink>
+        <NavLink to="/about" activeStyle={{ textDecoration: 'none'}, {color: '#fff'}} style={{ textDecoration: 'none', color: '#fff'}}>About</NavLink>
       </li>
       <li>
         <NavLink to="/contact" activeStyle={{ textDecoration: 'none'}, {color: '#fff'}} style={{ textDecoration: 'none', color: '#fff'}}>Contact</NavLink>
