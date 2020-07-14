@@ -25,7 +25,7 @@ justify-content: space-between;
     font-weight: normal;
   }
   .title{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-align: center;
     padding-top: 1rem;
     @media (max-width: 1000px) {
