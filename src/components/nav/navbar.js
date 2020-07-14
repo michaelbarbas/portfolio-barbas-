@@ -44,10 +44,12 @@ color: white;
   padding: 100px;
   margin-top: 1rem;
   background-color: white;
-  
+  @media (max-width: 800px) {
+    display:none;
+  }
 }
 @media (max-width: 800px) {
-  text-align:top'
+  
 }
 `;
 
