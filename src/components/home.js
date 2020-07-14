@@ -8,12 +8,7 @@ const Home = () => {
   return (
     
     <div className="container">
-      <h4 className="center">Michael Barbas</h4>
-      <div class="Roles">
-        <div class="Role">
-          <pre class="mod_1">Software Engineer</pre>
-        </div>
-      </div>
+      
       <div class="SocialMedia">
         <div class="Github">
           <a

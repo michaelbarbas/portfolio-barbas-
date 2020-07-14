@@ -11,15 +11,15 @@ top: 10px;
 right: 20px;
 z-index: 20;
 display: none;
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
 }
 div {
   width: 2rem;
-  height: 0.28rem;
-  background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+  height: 0.25rem;
+  background-color: ${({ open }) => (open ? "#367feb" : "#fff")};
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;
@@ -27,7 +27,7 @@ div {
     transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
   }
   &:nth-child(2) {
-    // transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+    //transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
     opacity: ${({ open }) => (open ? 0 : 1)};
   }
   &:nth-child(3) {

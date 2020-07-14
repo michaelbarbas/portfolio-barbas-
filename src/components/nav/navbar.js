@@ -22,7 +22,6 @@ justify-content: space-between;
     font-weight: normal;
     font-size: 1.5rem;
     padding-top: 5rem;
-
   }
   .title{
     font-size: 1.25rem;
@@ -38,7 +37,7 @@ color: white;
 .dot{
   height: 50px;
   width: 50px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-flex;
   padding: 100px;
