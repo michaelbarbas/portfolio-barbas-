@@ -11,7 +11,7 @@ const Nav = styled_comp.nav`
 font-family: sans-serif;
 width: 100%;
 height: 240px;
-border-bottom: 2px solid #f1f1f1;
+
 padding: 0 50px;
 display: flex;
 justify-content: space-between;
@@ -61,12 +61,12 @@ color: white;
   right : 0px;
   padding-right: 3.8rem;
   .Github{
-    padding-right: 3rem;
+    padding-right: 1.25rem;
     position:absolute;
     right: 0px;
   }
   .Linkedin{
-    padding-right: 2.5rem;
+    padding-right: .5rem;
     float:right;
   }
 }
@@ -77,7 +77,7 @@ const Navbar = () => {
     <Nav>
       {/* <span class="dot"></span> */}
       <div className="logo">Michael Barbas
-        <pre class="title">Software Engineer</pre>
+        <pre class="title">Software Developer</pre>
       </div>
       <div class="SocialMedia">
         <div class="Github">

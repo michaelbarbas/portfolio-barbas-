@@ -23,13 +23,14 @@ a:hover{
 @media (max-width: 800px) {
   flex-flow: column nowrap;
   background-color: #367feb;
-  border-left: 1rem solid #fff;
+  
   position: fixed;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
   height: 100vh;
   width: 225px;
+  box-shadow: ${({ open }) => (open ? "-10px 0px 10px 1px #335791" : "0")};
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   
@@ -101,6 +102,7 @@ const NavBarRight = ({ open }) => {
           }}
         >
           Contact
+          
         </NavLink>
       </li>
     </Ul>
