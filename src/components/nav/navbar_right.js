@@ -83,7 +83,7 @@ const NavBarRight = ({ open }) => {
             fontSize: "1.4rem",
           }}
         >
-          Projects
+          About
         </NavLink>
       </li>
       <li>
