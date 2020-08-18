@@ -9,20 +9,21 @@ display: flex;
 flex-flow: row nowrap;
 font-family: sans-serif;
 li {
+  padding-top: 50px;
   padding: 18px 10px;
   text-decoration: none;
   text-align: center;
 }
 
 a:hover{
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   padding: 6px 0;
 }
 
 @media (max-width: 800px) {
   flex-flow: column nowrap;
-  background-color: #367feb;
+  
   
   position: fixed;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -30,13 +31,13 @@ a:hover{
   right: 0;
   height: 100vh;
   width: 225px;
-  box-shadow: ${({ open }) => (open ? "-10px 0px 10px 1px #335791" : "0")};
+  box-shadow: ${({ open }) => (open ? "-1px 0px 10px 1px #000" : "0")};
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   
   a:hover{
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     padding: 6px 0;
   }
 }
@@ -51,13 +52,13 @@ const NavBarRight = ({ open }) => {
           to="/"
           activeStyle={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}
@@ -71,18 +72,18 @@ const NavBarRight = ({ open }) => {
           to="/about"
           activeStyle={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}
         >
-          About
+          Projects
         </NavLink>
       </li>
       <li>
@@ -90,13 +91,13 @@ const NavBarRight = ({ open }) => {
           to="/contact"
           activeStyle={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#fff",
+            color: "#000",
             fontFamily: "monospace",
             fontSize: "1.4rem",
           }}

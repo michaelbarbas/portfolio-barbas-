@@ -1,8 +1,15 @@
 import React from "react";
+import styled_comp from "styled-components";
 import '../App.css'
-const About = () => {
+
+const Container = styled_comp.div`
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #0F2862,#17124d, #091F36);
+  color: #fff;
+`
+const Projects = () => {
   return (
-    <div className="container">
+    <Container className="container">
       <div className = "about_section">
         <h1 className="about">About me</h1>
 
@@ -32,10 +39,10 @@ const About = () => {
           </ul>
       </div>
 
-    </div>
+    </Container>
 
 
   );
 };
 
-export default About;
+export default Projects;

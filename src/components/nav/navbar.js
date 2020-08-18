@@ -6,14 +6,19 @@ import '../../App.css';
 
 import GitHub from "../../image/github.png";     //
 import LinkedIn from "../../image/linkedin.png"; //img
+import Stars from "../../image/stars.png";
 
 const Nav = styled_comp.nav`
-font-family: sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+font-family: 'Source Code Pro', monospace;
 width: 100%;
 height: 240px;
-
-padding: 0 50px;
 display: flex;
+align-items: flex-start;
+padding: 0 50px;
+
 justify-content: space-between;
 .logo {
   padding: 15px 0;
@@ -32,74 +37,106 @@ justify-content: space-between;
 
     }
   }
+  
 }
-background-color: #367feb;
+
+
+
+.line1 {
+  width: 300px;
+  height: 10.75rem;
+  position: relative;
+
+  border-bottom: 6px solid #fff;
+  -webkit-transform:
+      rotate(50deg); 
+      
+  -webkit-transform:
+      skew(30deg);
+  position: absolute;
+  /* top: -20px; */
+  left: .1rem;
+}
+
+
 color: white;
-.dot{
-  height: 50px;
-  width: 50px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-flex;
-  padding: 100px;
-  margin-top: 1rem;
-  background-color: white;
-  @media (max-width: 1000px) {
+
+
+@media (max-width: 800px) {
+  .line1{
     display:none;
   }
 }
-@media (max-width: 800px) {
-  //
+
+
+.Name-border{
+  padding-top: 20px;
 }
 
-.SocialMedia{
-  margin-top: 11rem;
-  margin-left
+.Name {
+  color: #000;
+  border-right: solid 3px #000;
+  white-space: nowrap;
+  overflow: hidden;    
   display: inline-block;
-  width: 850px;
-  position:absolute;
-  right : 0px;
-  padding-right: 3.8rem;
-  .Github{
-    padding-right: 1.25rem;
-    position:absolute;
-    right: 0px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 28px;
+  color: #000;
+
+  animation: animated-text 3s steps(30,end) 1s 1 normal both, animated-cursor 800ms steps(30,end) infinite;
+  
+}
+
+
+.Title{
+  color: #000;
+  overflow: hidden;    
+  white-space: nowrap;
+  border-right: solid 3px #fff;
+ 
+  
+
+  animation: fadeIn ease 7s;
+
+}
+
+/* text animation */
+
+@keyframes animated-text{
+from{width: 0;}
+to{width: 240px;}
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
   }
-  .Linkedin{
-    padding-right: .5rem;
-    float:right;
+  60%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+from{border-right-color: rgba(36, 36, 36, 0.75);}
+to{border-right-color: transparent;}
+}
+
 `;
+
 
 const Navbar = () => {
   return (
-    <Nav>
+    <Nav id = "navigation">
       {/* <span class="dot"></span> */}
-      <div className="logo">Michael Barbas
-        <pre class="title">Software Developer</pre>
+      <div className="Name-border">
+        <div className="Name">Michael Barbas</div>
+        <div className="Title">Software Developer</div>
       </div>
-      <div class="SocialMedia">
-        <div class="Github">
-          <a
-            href="https://github.com/mbarbas11"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={GitHub} alt="github"></img>
-          </a>
-        </div>
-        <div class="Linkedin">
-          <a
-            href="https://www.linkedin.com/in/michael-barbas-30a147150/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={LinkedIn} alt="linkedin"></img>
-          </a>
-        </div>
-      </div>
-      
       <MenuButton />
     </Nav>
   );
