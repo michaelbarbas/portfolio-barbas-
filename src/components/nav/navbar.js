@@ -7,7 +7,6 @@ import '../../App.css';
 
 const Nav = styled_comp.nav`
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 font-family: 'Source Code Pro', monospace;
 width: 100%;
