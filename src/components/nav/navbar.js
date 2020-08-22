@@ -70,58 +70,58 @@ color: white;
   padding-top: 20px;
 }
 
-.Name {
-  color: #000;
-  border-right: solid 3px #000;
-  white-space: nowrap;
-  overflow: hidden;    
-  display: inline-block;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 28px;
-  color: #000;
+// .Name {
+//   color: #000;
+//   border-right: solid 3px #000;
+//   white-space: nowrap;
+//   overflow: hidden;    
+//   display: inline-block;
+//   font-family: 'Source Code Pro', monospace;
+//   font-size: 28px;
+//   color: #000;
 
-  animation: animated-text 3s steps(30,end) 1s 1 normal both, animated-cursor 800ms steps(30,end) infinite;
+//   animation: animated-text 3s steps(30,end) 1s 1 normal both, animated-cursor 800ms steps(30,end) infinite;
   
-}
+// }
 
 
-.Title{
-  color: #000;
-  overflow: hidden;    
-  white-space: nowrap;
-  border-right: solid 3px #fff;
+// .Title{
+//   color: #000;
+//   overflow: hidden;    
+//   white-space: nowrap;
+//   border-right: solid 3px #fff;
  
   
 
-  animation: fadeIn ease 7s;
+//   animation: fadeIn ease 7s;
 
-}
+// }
 
-/* text animation */
+// /* text animation */
 
-@keyframes animated-text{
-from{width: 0;}
-to{width: 240px;}
-}
+// @keyframes animated-text{
+// from{width: 0;}
+// to{width: 240px;}
+// }
 
-@keyframes fadeIn{
-  0%{
-    opacity: 0;
-  }
-  60%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
+// @keyframes fadeIn{
+//   0%{
+//     opacity: 0;
+//   }
+//   60%{
+//     opacity: 0;
+//   }
+//   100%{
+//     opacity: 1;
+//   }
+// }
 
-/* cursor animations */
+// /* cursor animations */
 
-@keyframes animated-cursor{
-from{border-right-color: rgba(36, 36, 36, 0.75);}
-to{border-right-color: transparent;}
-}
+// @keyframes animated-cursor{
+// from{border-right-color: rgba(36, 36, 36, 0.75);}
+// to{border-right-color: transparent;}
+// }
 
 `;
 
