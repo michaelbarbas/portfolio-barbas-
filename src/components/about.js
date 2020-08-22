@@ -7,7 +7,7 @@ const Container = styled_comp.div`
   background-image: linear-gradient(to right, #0F2862,#17124d, #091F36);
   color: #fff;
 `
-const Projects = () => {
+const About = () => {
   return (
     <Container className="container">
       <div className = "about_section">
@@ -45,4 +45,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default About;
