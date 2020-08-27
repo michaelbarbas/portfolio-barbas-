@@ -6,7 +6,6 @@ import "../../App.css";
 const Ul = styled_comp.ul`
 list-style: none;
 display: flex;
-position:
 flex-flow: row nowrap;
 font-family: 'Arvo', serif;
 li {
@@ -32,7 +31,7 @@ a:hover{
   right: 0;
   height: 100vh;
   width: 225px;
-  box-shadow: ${({ open }) => (open ? "-1px 0px 10px 1px #000" : "0")};
+  // box-shadow: ${({ open }) => (open ? "-1px 0px 10px 1px #000" : "0")};
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   
@@ -53,15 +52,15 @@ const NavBarRight = ({ open }) => {
           to="/"
           activeStyle={{
             textDecoration: "none",
-            color: "#333",
+            color: "#7d7777",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
           style={{
             textDecoration: "none",
             color: "#333",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
         >
           Home
@@ -73,15 +72,15 @@ const NavBarRight = ({ open }) => {
           to="/about"
           activeStyle={{
             textDecoration: "none",
-            color: "#333",
+            color: "#7d7777",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
           style={{
             textDecoration: "none",
             color: "#333",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
         >
           About
@@ -92,15 +91,15 @@ const NavBarRight = ({ open }) => {
           to="/contact"
           activeStyle={{
             textDecoration: "none",
-            color: "#333",
+            color: "#7d7777",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
           style={{
             textDecoration: "none",
             color: "#333",
             fontFamily: "'Arvo', serif",
-            fontSize: "1.4rem",
+            fontSize: "1.2rem",
           }}
         >
           Contact

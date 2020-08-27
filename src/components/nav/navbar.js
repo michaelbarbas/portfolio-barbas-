@@ -11,10 +11,13 @@ const Nav = styled_comp.nav`
 
 font-family: 'Arvo', serif;
 width: 100%;
-height: 240px;
+height: 150px;
 display: flex;
 align-items: flex-start;
 padding: 0 50px;
+color: white;
+border-top: 5px;
+
 
 justify-content: space-between;
 .logo {
@@ -36,28 +39,6 @@ justify-content: space-between;
   }
   
 }
-
-
-
-.line1 {
-  width: 300px;
-  height: 10.75rem;
-  position: relative;
-
-  border-bottom: 6px solid #fff;
-  -webkit-transform:
-      rotate(50deg); 
-      
-  -webkit-transform:
-      skew(30deg);
-  position: absolute;
-  /* top: -20px; */
-  left: .1rem;
-}
-
-
-color: white;
-
 
 @media (max-width: 800px) {
   .line1{

@@ -12,7 +12,6 @@ right: 20px;
 z-index: 20;
 display: none;
 cursor: pointer;
-
 @media (max-width: 800px) {
   display: flex;
   justify-content: space-around;
