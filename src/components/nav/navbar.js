@@ -7,7 +7,6 @@ import '../../App.css';
 
 const Nav = styled_comp.nav`
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 
 font-family: 'Arvo', serif;
