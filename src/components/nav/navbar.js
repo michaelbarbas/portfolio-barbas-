@@ -4,13 +4,9 @@ import styled_comp from "styled-components";
 import MenuButton from "./menu_button";
 import '../../App.css';
 
-import GitHub from "../../image/github.png";     //
-import LinkedIn from "../../image/linkedin.png"; //img
-import Stars from "../../image/stars.png";
 
 const Nav = styled_comp.nav`
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 font-family: 'Source Code Pro', monospace;
 width: 100%;
