@@ -6,7 +6,6 @@ const Container = styled_comp.div`
   font-family: sans-serif;
 
   color: #333;
-  position: absolute;
   
 `
 const About = () => {
