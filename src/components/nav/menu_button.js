@@ -11,7 +11,9 @@ top: 10px;
 right: 20px;
 z-index: 20;
 display: none;
-@media (max-width: 400px) {
+cursor: pointer;
+
+@media (max-width: 800px) {
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -19,7 +21,7 @@ display: none;
 div {
   width: 2rem;
   height: 0.25rem;
-  background-color: ${({ open }) => (open ? "#000" : "#000")};
+  background-color: ${({ open }) => (open ? "#333" : "#333")};
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;

@@ -4,8 +4,10 @@ import '../App.css'
 
 const Container = styled_comp.div`
   font-family: sans-serif;
-  background-image: linear-gradient(to right, #0F2862,#17124d, #091F36);
-  color: #fff;
+
+  color: #333;
+  position: absolute;
+  
 `
 const About = () => {
   return (

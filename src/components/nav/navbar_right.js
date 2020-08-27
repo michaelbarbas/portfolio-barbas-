@@ -6,8 +6,9 @@ import "../../App.css";
 const Ul = styled_comp.ul`
 list-style: none;
 display: flex;
+position:
 flex-flow: row nowrap;
-font-family: sans-serif;
+font-family: 'Arvo', serif;
 li {
   padding-top: 50px;
   padding: 18px 10px;
@@ -36,8 +37,8 @@ a:hover{
   transition: transform 0.3s ease-in-out;
   
   a:hover{
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
     padding: 6px 0;
   }
 }
@@ -52,14 +53,14 @@ const NavBarRight = ({ open }) => {
           to="/"
           activeStyle={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
         >
@@ -72,14 +73,14 @@ const NavBarRight = ({ open }) => {
           to="/about"
           activeStyle={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
         >
@@ -91,14 +92,14 @@ const NavBarRight = ({ open }) => {
           to="/contact"
           activeStyle={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
           style={{
             textDecoration: "none",
-            color: "#000",
-            fontFamily: "monospace",
+            color: "#333",
+            fontFamily: "'Arvo', serif",
             fontSize: "1.4rem",
           }}
         >

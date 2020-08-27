@@ -7,8 +7,10 @@ import '../../App.css';
 
 const Nav = styled_comp.nav`
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
-font-family: 'Source Code Pro', monospace;
+
+font-family: 'Arvo', serif;
 width: 100%;
 height: 240px;
 display: flex;
@@ -62,6 +64,7 @@ color: white;
   .line1{
     display:none;
   }
+  
 }
 
 
@@ -70,29 +73,36 @@ color: white;
 }
 
 .Name {
-  color: #000;
-  border-right: solid 3px #000;
+  color: #333;
+  // border-right: solid 3px #000;
   white-space: nowrap;
   overflow: hidden;    
   display: inline-block;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Arvo', serif;
   font-size: 28px;
-  color: #000;
 
-  animation: animated-text 3s steps(30,end) 1s 1 normal both, animated-cursor 800ms steps(30,end) infinite;
+  @media (max-width: 800px) {
+    font-size: 24px;
+    
+  }
+
+  // animation: animated-text 3s steps(30,end) 1s 1 normal both/* animated-cursor 800ms steps(30,end) infinite*/;
   
 }
 
 
 .Title{
-  color: #000;
+  color: #333;
   overflow: hidden;    
   white-space: nowrap;
   border-right: solid 3px #fff;
  
-  
+  @media (max-width: 800px) {
+    font-size: 16px;
+    
+  }
 
-  animation: fadeIn ease 7s;
+  // animation: fadeIn ease 7s;
 
 }
 
