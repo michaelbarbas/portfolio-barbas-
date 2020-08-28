@@ -1,11 +1,15 @@
 import React from "react";
 import styled_comp from "styled-components";
 import "../App.css";
+import Fig from "../image/stick_figure.png";
 
 const Container = styled_comp.div`
   font-family: 'Arvo', serif;
 
-
+  @media (max-width: 800px) {
+    margin-left: 30px;
+  }
+  
   color: #333;
   
   margin-left: 50px;
@@ -57,41 +61,84 @@ const Container = styled_comp.div`
   }
 
   .description{
-    padding-top: 20px;
+    padding-top: 50px;
     animation: fadeIn ease 5s;
+    float: right;
+    display: inline-block;
+    margin-left: 500px;
+    margin-right: 500px;
+    @media (max-width: 800px) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .description img {
+    width: 90px;
+    // height: auto;
+    float: left;
+    
+  }
+
+  .fig{
+    padding-right: 20px;
+    padding-bottom: 50px;
   }
 
   .skills_section{
     animation: fadeIn ease 5s;
+    padding-top: 20px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
   }
+  .skills{
+    
+  }
+
+ 
+  ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  li{
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+   
+    
+    text-align: center;
+  }
+ 
 `;
 const About = () => {
   return (
     <Container className="container">
       <div className="about_section">
         <h1 class="intro">Hi there!</h1>
+
         <p className="description">
-          {" "}
-          My name is Michael Barbas, and I am a software engineer. I am
-          currently a junior at SUNY Plattsburgh. I like to work with various
-          technologies, and my current and future projects I work on come from
-          problems that have become prevalent at some point in my life. Being
-          able to fix those problems through software solutions is a way for me
-          to help others and further improve my skills. I am currently the
-          Treasurer of Coding Hub, an organization providing software solutions
-          for students to help solve problems at SUNY Plattsburgh
+          <img src={Fig} class="fig" alt="figure"></img> My name is Michael
+          Barbas, and I am a software developer. I am currently a student
+          studying Computer Science at SUNY Plattsburgh. I have a profound
+          interest in software and game development.
         </p>
       </div>
 
-      <div className="skills_section">
-        <h2 className="skills">Skills</h2>
-        <h3 className="prog_lang">Programming Languages: </h3>
-        <ul className="languages">
-          <li>Python</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-        </ul>
+      <div class="skills_section">
+        <h2 class="skills">Skills</h2>
+        <h3 class="prog_lang">
+          Programming Languages:
+          <ul class="languages">
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </h3>
         <h4 className="other">Other skills: </h4>
         <ul className="other_skills">
           <li>ReactJS</li>

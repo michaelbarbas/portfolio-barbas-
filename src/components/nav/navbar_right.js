@@ -55,6 +55,7 @@ const NavBarRight = ({ open }) => {
             color: "#7d7777",
             fontFamily: "'Arvo', serif",
             fontSize: "1.2rem",
+            cursor: "default",
           }}
           style={{
             textDecoration: "none",

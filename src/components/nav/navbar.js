@@ -18,6 +18,11 @@ padding: 0 50px;
 color: white;
 border-top: 5px;
 
+@media (max-width: 800px) {
+  font-weight: normal;
+  margin-left: -20px;
+}
+
 
 justify-content: space-between;
 .logo {
@@ -26,7 +31,7 @@ justify-content: space-between;
   font-family: sans-serif;
   font-size: 1.5rem;
   padding-top: 5rem;
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     font-weight: normal;
   }
   .title{
