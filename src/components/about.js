@@ -1,7 +1,6 @@
 import React from "react";
 import styled_comp from "styled-components";
 import "../App.css";
-import Fig from "../image/stick_figure.png";
 import gamepad from "../image/gaming-gamepad.png";
 import web from "../image/web-programming.png";
 import phone from "../image/phone.png";
