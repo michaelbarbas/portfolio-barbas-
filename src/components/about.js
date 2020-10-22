@@ -143,7 +143,7 @@ const About = () => {
         <div class="container">
           <div class="skill-box">
             <div class="skill-header">
-              <img src={web}></img>
+              <img src={web} alt = ''></img>
               <h2>Web</h2>
             </div>
             <p>
@@ -171,7 +171,7 @@ const About = () => {
           </div>
           <div class="skill-box">
             <div class="skill-header">
-              <img src={phone}></img>
+              <img src={phone} alt = ''></img>
               <h2>Software</h2>
             </div>
             <p>
@@ -205,7 +205,7 @@ const About = () => {
           <div class="skill-box">
             <div class="skill-header">
               <div class="img"></div>
-              <img src={gamepad}></img>
+              <img src={gamepad} alt = ''></img>
               <h2>Games</h2>
             </div>
             <p>
