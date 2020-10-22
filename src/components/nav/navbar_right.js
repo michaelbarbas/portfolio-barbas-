@@ -31,10 +31,13 @@ a:hover{
   right: 0;
   height: 100vh;
   width: 225px;
-  // box-shadow: ${({ open }) => (open ? "-1px 0px 10px 1px #000" : "0")};
+  //box-shadow: ${({ open }) => (open ? "-1px 0px 10px 1px #000" : "0")};
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
-  
+  //background-color: ${({ open }) =>
+    open ? "rgba(0,0,0,0.2)" : "rgba(0,0,0,0.2)"};
+ 
+
   a:hover{
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
@@ -104,7 +107,6 @@ const NavBarRight = ({ open }) => {
           }}
         >
           Contact
-          
         </NavLink>
       </li>
     </Ul>

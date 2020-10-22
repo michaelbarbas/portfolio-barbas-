@@ -45,12 +45,6 @@ justify-content: space-between;
   
 }
 
-@media (max-width: 800px) {
-  .line1{
-    display:none;
-  }
-  
-}
 
 
 .Name-border{

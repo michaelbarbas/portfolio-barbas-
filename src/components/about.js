@@ -2,9 +2,13 @@ import React from "react";
 import styled_comp from "styled-components";
 import "../App.css";
 import Fig from "../image/stick_figure.png";
+import gamepad from "../image/gaming-gamepad.png";
+import web from "../image/web-programming.png";
+import phone from "../image/phone.png";
 
 const Container = styled_comp.div`
   font-family: 'Arvo', serif;
+
 
   @media (max-width: 800px) {
     margin-left: 30px;
@@ -21,9 +25,9 @@ const Container = styled_comp.div`
     white-space: nowrap;
     overflow: hidden;    
  
-    animation: animated-text 2s steps(42,end) 1s 1 normal both;
+    animation: animated-text 1s steps(42,end) 1s 1 normal both;
     
-    font-size: 25px;
+    
     border-bottom: 3px solid blue;
     
     
@@ -33,7 +37,7 @@ const Container = styled_comp.div`
 
   @keyframes animated-text{
   from{width: 0;}
-  to{width: 115px;}
+  to{width: 145px;}
   }
 
   @keyframes text-wait{
@@ -45,8 +49,11 @@ const Container = styled_comp.div`
     0%{
       opacity: 0;
     }
-    60%{
+    40%{
       opacity: 0;
+    }
+    80%{
+      opacity: 1;
     }
     100%{
       opacity: 1;
@@ -60,93 +67,174 @@ const Container = styled_comp.div`
   to{border-right-color: transparent;}
   }
 
-  .description{
-    padding-top: 50px;
-    animation: fadeIn ease 5s;
-    float: right;
-    display: inline-block;
-    margin-left: 500px;
-    margin-right: 500px;
-    @media (max-width: 800px) {
-      margin-left: 5px;
-      margin-right: 5px;
+
+  .skills_block{
+    // animation-name: fadeIn;
+    // animation-duration: 5s;
+  }
+
+  .container
+  {
+    img{
+      max-width: 500px;
+      max-height: 50px;
+      
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p{
+      padding-top:15px;
+    }
+    padding: 3.75%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+  }
+
+
+  @media only screen and (min-width: 640px) {
+    .container {
+      grid-template-columns: 30% 30% 30%;
+      grid-column-gap: 5%;
+      grid-row-gap: 50px;
+    }
+    .container > div {
+      padding: 20px;
     }
   }
 
-  .description img {
-    width: 90px;
-    // height: auto;
-    float: left;
-    
+  h3{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 25px;
   }
 
-  .fig{
-    padding-right: 20px;
-    padding-bottom: 50px;
-  }
-
-  .skills_section{
-    animation: fadeIn ease 5s;
+  h2{
     padding-top: 20px;
-    margin: auto;
-    width: 50%;
     text-align: center;
-  }
-  .skills{
-    
+    align-content: center;
   }
 
- 
-  ul{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  h4{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
-  li{
-    align-items: center;
-    list-style: none;
-    display: inline-block;
-   
-    
-    text-align: center;
+  ul {
+    text-align: left;
+    padding-left: 30px;
   }
- 
+
 `;
 const About = () => {
   return (
-    <Container className="container">
+    <Container className="container_ph">
       <div className="about_section">
         <h1 class="intro">Hi there!</h1>
-
-        <p className="description">
-          <img src={Fig} class="fig" alt="figure"></img> My name is Michael
-          Barbas, and I am a software developer. I am currently a student
-          studying Computer Science at SUNY Plattsburgh. I have a profound
-          interest in software and game development.
-        </p>
       </div>
 
-      <div class="skills_section">
-        <h2 class="skills">Skills</h2>
-        <h3 class="prog_lang">
-          Programming Languages:
-          <ul class="languages">
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </h3>
-        <h4 className="other">Other skills: </h4>
-        <ul className="other_skills">
-          <li>ReactJS</li>
-          <li>NodeJS</li>
-          <li>Unix</li>
-          <li>Git</li>
-          <li>Firebase</li>
-        </ul>
+      <div class="skills_block">
+        <div class="header">
+          <h3>My Skills</h3>
+        </div>
+        <div class="container">
+          <div class="skill-box">
+            <div class="skill-header">
+              <img src={web}></img>
+              <h2>Web</h2>
+            </div>
+            <p>
+              When I first started looking into programming, web technologies
+              caught my eye since they are fairly simple to start off learning.
+              After learning HTML and CSS, I was then introduced to further
+              technologies such as Node and React.
+            </p>
+            
+            <h4>Tools/Tech</h4>
+            <ul class = "Languages">
+              <li>Node</li>
+              <li>React</li>
+              <li>Redux</li>              
+            </ul>
+
+            <h4>Languages</h4>
+            <ul class = "languages">
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>HTML</li>
+              <li>CSS/SCSS</li>
+            </ul>
+            
+          </div>
+          <div class="skill-box">
+            <div class="skill-header">
+              <img src={phone}></img>
+              <h2>Software</h2>
+            </div>
+            <p>
+              Developing applications is very interesting, since nearly
+              everyone in the world can access them. Just recently I have gotten
+              involved with android development, using Flutter or React Native.
+            </p>
+
+            <h4>Tools/Tech</h4>
+            <ul class = "Languages">
+              <li>Node</li>
+              <li>ExpressJS</li>
+              <li>Firebase</li>
+              <li>Flutter</li>
+              <li>React Native</li>
+              <li>Flutter</li>
+            </ul>
+
+            <h4>Languages</h4>
+            <ul class = "languages">
+              <li>Dart</li>
+              <li>Kotlin</li>
+              <li>Python</li>
+              <li>Javascript</li>
+            </ul>
+            
+              
+           
+
+          </div>
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="img"></div>
+              <img src={gamepad}></img>
+              <h2>Games</h2>
+            </div>
+            <p>
+              Ever since I was young I was always passionate about video games.
+              I developed a profound interest in game development, where I
+              started programming in C# and C++ in Unity and UE4.
+            </p>
+
+            <h4>Tools/Tech</h4>
+            <ul class = "tools">
+              <li>Unity</li>
+              <li>Unreal Engine 4</li>
+              <li>Blender</li>
+            </ul>
+
+            <h4>Languages</h4>
+            <ul class = "languages">
+              <li>C++</li>
+              <li>C#</li>
+            </ul>
+            
+
+          </div>
+        </div>
+
+        <div className = "Experience">
+          <h2>Experience</h2>
+        </div>
       </div>
     </Container>
   );
