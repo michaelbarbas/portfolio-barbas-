@@ -69,8 +69,8 @@ const Container = styled_comp.div`
 
 
   .skills_block{
-    // animation-name: fadeIn;
-    // animation-duration: 5s;
+    animation-name: fadeIn;
+    animation-duration: 5s;
   }
 
   .container
