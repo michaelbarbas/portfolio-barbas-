@@ -111,6 +111,13 @@ from{border-right-color: rgba(36, 36, 36, 0.75);}
 to{border-right-color: transparent;}
 }
 
+.temp{
+  margin-top: 1rem;
+  color: #b42222;
+  font-size: 10px;
+
+}
+
 `;
 
 
@@ -121,6 +128,7 @@ const Navbar = () => {
       <div className="Name-border">
         <div className="Name">Michael Barbas</div>
         <div className="Title">Software Developer</div>
+        <div className = "temp">Work in Progress.</div>
       </div>
       <MenuButton />
     </Nav>
